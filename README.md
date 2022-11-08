@@ -10,3 +10,29 @@ This project uses the following combat tools:
 - VueJs v3
 - Vuetify v3
 - Material Design Icon v7
+
+## Installation
+Clone Laragates repository
+``` bash
+git clone https://github.com/nusagates/laragates.git project-name
+```
+Install dependency
+```bash
+composer install
+```
+Install NPM modules
+```bash
+npm install
+```
+Rename ``.env.example`` file to ``.env`` and change database configs. Then run migration
+```bash
+php artisan migrate
+```
+Generate APP key
+```bash
+php artisan key:generate
+```
+Start development.
+```bash
+npm run dev
+```
