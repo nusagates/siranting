@@ -36,3 +36,8 @@ Start development.
 ```bash
 npm run dev
 ```
+## Support
+If there are problems or questions, please contact us via
+
+- Telegram: https://t.me/cakbud
+- Instagram: https://www.instagram.com/cakbood/
