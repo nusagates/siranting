@@ -76,6 +76,9 @@ export default {
             axios.post('/api/v1/login', this.field.user).then(res=>{
                 if(res.data.code===200){
                     this.$refs.message.show(res.data.message)
+                    console.log(res.data.data)
+                    localStorage.setItem('user', JSON.stringify(res.data.data))
+                    location.href='/submission'
                 }else{
                     this.$refs.message.show(res.data.message, 'warning')
                 }
@@ -84,6 +87,14 @@ export default {
             })
         }
     },
+    mounted(){
+        let user=localStorage.getItem('user')
+        console.log(user)
+        if(user!==null){
+            location.href='/submission'
+        }
+    }
+
 }
 </script>
 
