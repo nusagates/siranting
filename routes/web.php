@@ -19,3 +19,5 @@ Route::get('/', function () {
 
 Route::view('login', 'pages.login');
 Route::view('register', 'pages.register');
+Route::view('submission', 'pages.submission');
+
