@@ -4,17 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Models\Profession;
 use Illuminate\Http\Request;
+use Nusagates\Helper\Responses;
 
 class ProfessionController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return array
      */
     public function index()
     {
-        //
+        return Responses::showSuccessMessage("Success",Profession::all());
     }
 
     /**
