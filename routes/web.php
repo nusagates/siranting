@@ -21,4 +21,6 @@ Route::view('login', 'pages.login');
 Route::view('register', 'pages.register');
 Route::view('submission', 'pages.submission');
 Route::view('administrative', 'pages.administrative');
+Route::view('companies', 'pages.companies');
+Route::view('mosque', 'pages.mosque');
 
